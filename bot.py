@@ -288,16 +288,15 @@ def handle_link(m):
     download_pool.submit(process)
 
 bot.infinity_polling()
-
 from flask import Flask
-from threading import Thread
+import threading
 
 app = Flask('')
 
 
-   @app.route("/")
-   def home():
-     return "I am alive!"
+@app.route('/')
+def home():
+  return "I am alive!"
 
 
 def run():
@@ -305,10 +304,8 @@ def run():
 
 
 def keep_alive():
-  t = Thread(target=run)
+  t = threading.Thread(target=run)
   t.start()
 
 
-# Buni eng pastga bot.infinity_polling() dan oldin yozasiz
 keep_alive()
-
