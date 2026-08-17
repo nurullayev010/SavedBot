@@ -295,9 +295,9 @@ from threading import Thread
 app = Flask('')
 
 
-@app.route('/')
-def home():
-  I am alive!
+   @app.route("/")
+   def home():
+     return "I am alive!"
 
 
 def run():
