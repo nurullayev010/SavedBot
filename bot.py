@@ -8,7 +8,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 # ================= SOZLAMALAR =================
-TOKEN = "8872228670:AAEkgyI0KZ64TDC5S4Z_bOPmSq6bRpYEkZk"
+TOKEN = "8872228670:AAH6RQbh_Fb1zqS9LR6Gv790t_C0kSDcPxY"
 ADMIN_ID = 7322361107  # O'z ID raqamingizni yozing
 DB_FILE = "insta_bot_db.json"
 bot = telebot.TeleBot(TOKEN)
